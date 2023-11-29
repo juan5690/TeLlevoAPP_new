@@ -1,9 +1,24 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>recuperar-pass</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header title="Recuperar contraseña"></app-header>
 
-<ion-content >
-
+<ion-content>
+  <ion-card>
+    <form [formGroup]="FormNuevaPass">
+      <ion-item>
+        <ion-label position="floating">Usuario:</ion-label>
+        <ion-input formControlName="nombre"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Contraseña:</ion-label>
+        <ion-input formControlName="password" type="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">nueva contraseña</ion-label>
+        <ion-input formControlName="nuevaPass" type="password"></ion-input>
+      </ion-item>
+      <!-- fin inputs -->
+      <!-- boton para iniciar -->
+      <ion-button expand="block" (click)="Modificar()">Modificar</ion-button>
+      <ion-button expand="block" href="login">volver al login</ion-button>
+    </form>
+  </ion-card>
 </ion-content>
