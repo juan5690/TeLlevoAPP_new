@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <ion-item>Hola {{ nombreUsuario }} Bienvenido!</ion-item>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <!-- Contenido de la página de inicio -->
+  <ion-card>
+  <ion-item position="center">
+    <ion-label>
+      <p>¿Como deseas ingresar?</p>
+    </ion-label>
+  </ion-item>
+  <ion-button expand="block" [routerLink]="['/conductor']" routerLinkActive="router-link-active" >Como conductor</ion-button>
+  <br>
+  <ion-button expand="block" [routerLink]="['/pasajero']" routerLinkActive="router-link-active" >Como pasajero</ion-button>
+  <br>
+  <ion-button expand="block" [routerLink]="['/login']" routerLinkActive="router-link-active" >Cerrar sesion</ion-button>
+</ion-card>
+</ion-content>

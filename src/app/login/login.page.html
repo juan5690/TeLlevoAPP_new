@@ -1,0 +1,26 @@
+<app-header title="Login"></app-header>
+
+<ion-content>
+    <!-- div principal -->
+    <div class="d-flex-center">
+    <b></b>
+    <!-- inputs -->
+    <ion-card>
+        <form [formGroup]="formularioLogin">
+        <ion-item>
+            <ion-label position="floating">Usuario:</ion-label>
+            <ion-input formControlName="nombre"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Contraseña:</ion-label>
+            <ion-input formControlName="password" type="password"></ion-input>
+        </ion-item>
+        <ion-button expand="block" (click)="ingresar()">Ingresar</ion-button>
+        <br>
+        <ion-button expand="block" color="success" [routerLink]="['/registrar']">registrarse</ion-button>
+        <!-- fin inputs -->
+        <p>¿Olvidaste la contraseña? <a [routerLink]="['/recuperar-pass']" routerLinkActive="router-link-active" >Cambiar contraseña</a></p>
+        </form>
+    </ion-card>
+    </div>
+</ion-content>

@@ -1,0 +1,31 @@
+<ion-header  class="estilo_header">
+
+  <ion-toolbar>
+      <ion-title>Registrarse</ion-title>
+      <strong>Te Llevo App</strong>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <form [formGroup]="formularioRegistro">
+      <ion-item>
+        <ion-label position="floating">Usuario:</ion-label>
+        <ion-input formControlName="nombre"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Contraseña:</ion-label>
+        <ion-input formControlName="password" type="password"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Repita contraseña:</ion-label>
+        <ion-input formControlName="validacionPassword" type="password"></ion-input>
+      </ion-item>
+      <!-- fin inputs -->
+      <!-- boton para iniciar -->
+      <ion-button expand="block" (click)="registrar()">Registrar</ion-button>
+      <ion-button expand="block" href="login">volver al login</ion-button>
+    </form>
+  </ion-card>
+</ion-content>
