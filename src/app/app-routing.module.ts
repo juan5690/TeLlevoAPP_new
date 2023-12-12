@@ -11,6 +11,37 @@ const routes: Routes = [
     redirectTo: 'login',
     pathMatch: 'full'
   },
+
+  {
+    path: 'login',
+    redirectTo: 'login',
+    pathMatch: 'full'
+  },
+
+  {
+    path: 'menu',
+    redirectTo: 'menu',
+    pathMatch: 'full'
+  },
+
+  {
+    path: 'registrar',
+    redirectTo: 'registrar',
+    pathMatch: 'full'
+  },
+
+/*   {
+    path: '**',
+    redirectTo: 'e404',
+    pathMatch: 'full'
+  }, */
+
+  {
+    path: 'recuperar-pass',
+    redirectTo: 'recuperar-pass',
+    pathMatch: 'full'
+  },
+
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)

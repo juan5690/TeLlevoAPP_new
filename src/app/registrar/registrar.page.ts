@@ -39,14 +39,16 @@ export class RegistrarPage implements OnInit {
       return;
     }
 
-    var usuario = {
+    var usuarioNombre = {
       nombre: f.nombre,
-      password: f.password
     }
 
-    localStorage.setItem('usuario', JSON.stringify(usuario));
+    var usuarioPass ={
+      password: f.password,
+    }
 
-    localStorage.setItem('ingresado','true');
+    localStorage.setItem('nombre', JSON.stringify(usuarioNombre));
+    localStorage.setItem('password',JSON.stringify(usuarioPass));
     this.navCTRL.navigateRoot(['/menu', { nombre: f.nombre }]);
   }
 

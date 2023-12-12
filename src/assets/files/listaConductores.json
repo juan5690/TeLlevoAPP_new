@@ -1,0 +1,52 @@
+{
+    "data": [
+        {
+            "patente":"1001",
+            "conductor":"Chopper",
+            "vehiculo":"mazda rx7",
+            "image":"chopper.png",
+            "costo":"3500",
+            "destino":"talcahuano"
+        },
+        {
+            "patente":"1002",
+            "conductor":"Xoda",
+            "vahiculo":"moto",
+            "image":"xoda.png",
+            "costo":"3500",
+            "destino":"talcahuano"
+        },
+        {
+            "patente":"1003",
+            "conductor":"vardoc",
+            "vehiculo":"kia rio",
+            "image":"vardoc.png",
+            "costo":"3500",
+            "destino":"yumbel"
+        },
+        {
+            "patente":"1004",
+            "conductor":"corxea",
+            "vehiculo":"tronco",
+            "image":"udyr.png",
+            "costo":"3500",
+            "destino":"tomé"
+        },
+        {
+            "patente":"1005",
+            "conductor":"papi micky",
+            "vehiculo":"nissan v16",
+            "image":"pasta.png",
+            "costo":"3500",
+            "destino":"san pedro"
+        },
+        {
+            "patente":"1006",
+            "conductor":"fiu",
+            "vehiculo":"ford mustang gt",
+            "image":"fiu.png",
+            "costo":"3500",
+            "destino":"hualpen"
+        }
+    ]
+}
